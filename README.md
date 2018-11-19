@@ -1,7 +1,7 @@
-# Angular, NgRx and Angular Material Starter 
+# Angular, NgRx and Angular Material Starter
 by [@tomastrajan](https://twitter.com/tomastrajan)
 
-[![license](https://img.shields.io/github/license/tomastrajan/angular-ngrx-material-starter.svg)](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/LICENSE) [![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Build Status](https://travis-ci.org/tomastrajan/angular-ngrx-material-starter.svg?branch=master)](https://travis-ci.org/tomastrajan/angular-ngrx-material-starter) 
+[![license](https://img.shields.io/github/license/tomastrajan/angular-ngrx-material-starter.svg)](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/LICENSE) [![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Build Status](https://travis-ci.org/tomastrajan/angular-ngrx-material-starter.svg?branch=master)](https://travis-ci.org/tomastrajan/angular-ngrx-material-starter)
 [![Codecov](https://img.shields.io/codecov/c/github/tomastrajan/angular-ngrx-material-starter.svg)](https://codecov.io/gh/tomastrajan/angular-ngrx-material-starter)
  [![Twitter Follow](https://img.shields.io/twitter/follow/tomastrajan.svg?style=social&label=Follow)](https://twitter.com/tomastrajan)
 
@@ -40,9 +40,9 @@ npm start
   * `npm run cy:open` - opens the Cypress Test Runner in interactive mode
   * `npm run cy:run` - runs Cypress tests via the cli
   * `npm run prod` - runs full prod build and serves prod bundle
-  * `npm run prettier` - runs prettier to format whole code base (`.ts` and `.scss`) 
-  * `npm run analyze` - runs full prod build and `webpack-bundle-analyzer` to visualize how much code is shipped (dependencies & application) 
-  * `npm run compodoc` - runs [Compodoc](https://compodoc.app) to generate a static documentation of the application 
+  * `npm run prettier` - runs prettier to format whole code base (`.ts` and `.scss`)
+  * `npm run analyze` - runs full prod build and `webpack-bundle-analyzer` to visualize how much code is shipped (dependencies & application)
+  * `npm run compodoc` - runs [Compodoc](https://compodoc.app) to generate a static documentation of the application
 
 ![analzye](https://raw.githubusercontent.com/tomastrajan/angular-ngrx-material-starter/master/meta-assets/analyze.png)
 ## Run Inside Docker Container
@@ -52,11 +52,11 @@ npm start
    -v /usr/src/app/node_modules \
    -p 4200:4200 \
    --rm \
-   material-starter` - starts `material-starter` container (you can access running application browsing http://localhost:4200) 
+   material-starter` - starts `material-starter` container (you can access running application browsing http://localhost:4200)
 ## Make It Your Own
 When using this starter project to build your own app you might consider some of the following steps:
-  
-  * use `search and replace` functionality of your favourite IDE to replace `anms` with `<your-app-prefix>`
+
+  * use `search and replace` functionality of your favourite IDE to replace `sma` with `<your-app-prefix>`
   * rename project in `package.json` `name` property and set appropriate version (eg `0.0.0` or `1.0.0`)
   * remove / rename context path config ` -- --deploy-url /angular-ngrx-material-starter/ --base-href /angular-ngrx-material-starter` in `package.json`, this is used to configure url (context path) on which the application will be available (eg. `https://www.something.com/<context-path>/`)
   * rename app in `src/environments/` files (will be shown in browser tab)
@@ -67,15 +67,15 @@ When using this starter project to build your own app you might consider some of
   * replace logo in `src/assets` folder ( currently 128 x 128 pixel `png` file )
   * adjust colors in `src/themes/default-theme.scss`
   * create a pull request in the [original repository](https://github.com/tomastrajan/angular-ngrx-material-starter/) to update `BUILT_WITH.md` [file](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/BUILT_WITH.md) with a link and short description of your project
-  
+
 #### Continuous Integration
 Starter project is using [Travis CI](https://travis-ci.org/) for running linters and tests on every commit.
 Based on your preferences and needs you can either:
 
   * not use / use other CI server and delete both `.travis.yml` and `.travis-deploy.sh`
-  * create Travis CI account and link it to your projects Github repo and [configure build](https://medium.com/@tomastrajan/continuous-deployment-of-client-side-apps-with-github-pages-travis-ci-10e9d641a889) 
+  * create Travis CI account and link it to your projects Github repo and [configure build](https://medium.com/@tomastrajan/continuous-deployment-of-client-side-apps-with-github-pages-travis-ci-10e9d641a889)
     with `GH_REF` and `GH_TOKEN` environment variables for automatic deployment of releases to Github Pages
-  
+
 
 ## Goals
 The main goal of this repository is to provide an up to date example of Angular application following all recent best practices in various areas like:
@@ -93,7 +93,7 @@ The main goal of this repository is to provide an up to date example of Angular 
 This repository will also strive to always stay in sync with releases of Angular and the related libraries.
 The nature of the repository is also a great match for first time open source contributors who can add
 simple features and enhance test coverage, all contributors are more than welcome!
-  
+
 
 ## Learning Materials
 Articles with content that explains various approaches used to build this starter project.
@@ -105,17 +105,17 @@ Articles with content that explains various approaches used to build this starte
   * [Blog post about configuration of animations during runtime](https://medium.com/tomastrajan/total-guide-to-dynamic-angular-animations-that-can-be-toggled-at-runtime-be5bb6778a0a)
   * [Blog post about unit testing of components with NgRx TestStore](https://medium.com/@tomastrajan/how-to-unit-test-angular-components-with-fake-ngrx-teststore-f0500cc5fc26)
   * [Blog post about Angular CLI budgets](https://medium.com/@tomastrajan/how-did-angular-cli-budgets-save-my-day-and-how-they-can-save-yours-300d534aae7a)
-  
+
   * [Blog post about Angular 6+ DI with providedIn](https://medium.com/@tomastrajan/total-guide-to-angular-6-dependency-injection-providedin-vs-providers-85b7a347b59f)
 
-#### Theming 
+#### Theming
 
   * [Blog post](https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1)
   * [Presentation (Slides)](http://slides.com/tomastrajan/angular-material-themes-guide#/)
   * [Live coding Video Tutorial](https://www.youtube.com/watch?v=PsgZjFTAleI)
   * [Meetup Presentation & Live coding Video](https://www.youtube.com/watch?v=7auj9RfCNrE)
 
- 
+
 ## Features
 
 * custom themes support (4 themes included)
@@ -126,7 +126,7 @@ Articles with content that explains various approaches used to build this starte
 * fully responsive design
 * angular-material and custom components in `SharedModule`
 * Cypress for end to end tests
- 
+
 ## Stack
 
 * Angular

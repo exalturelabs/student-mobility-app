@@ -16,7 +16,7 @@ import { State as BaseExamplesState } from '../examples.state';
 interface State extends BaseSettingsState, BaseExamplesState {}
 
 @Component({
-  selector: 'anms-examples',
+  selector: 'sma-examples',
   templateUrl: './examples.component.html',
   styleUrls: ['./examples.component.scss'],
   animations: [routeAnimations],
@@ -28,13 +28,13 @@ export class ExamplesComponent implements OnInit {
   activatedRouteSnapshot$: Observable<ActivatedRouteSnapshot>;
 
   examples = [
-    { link: 'todos', label: 'anms.examples.menu.todos' },
-    { link: 'stock-market', label: 'anms.examples.menu.stocks' },
-    { link: 'theming', label: 'anms.examples.menu.theming' },
-    { link: 'crud', label: 'anms.examples.menu.crud' },
-    { link: 'form', label: 'anms.examples.menu.form' },
-    { link: 'notifications', label: 'anms.examples.menu.notifications' },
-    { link: 'authenticated', label: 'anms.examples.menu.auth', auth: true }
+    { link: 'todos', label: 'sma.examples.menu.todos' },
+    { link: 'stock-market', label: 'sma.examples.menu.stocks' },
+    { link: 'theming', label: 'sma.examples.menu.theming' },
+    { link: 'crud', label: 'sma.examples.menu.crud' },
+    { link: 'form', label: 'sma.examples.menu.form' },
+    { link: 'notifications', label: 'sma.examples.menu.notifications' },
+    { link: 'authenticated', label: 'sma.examples.menu.auth', auth: true }
   ];
 
   constructor(

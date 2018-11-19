@@ -33,7 +33,7 @@ import {
 } from './settings';
 
 @Component({
-  selector: 'anms-root',
+  selector: 'sma-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [routeAnimations]
@@ -49,19 +49,21 @@ export class AppComponent implements OnInit {
   logo = require('../assets/logo.png');
   languages = ['en', 'de', 'sk', 'fr', 'es', 'pt-br'];
   navigation = [
-    { link: 'about', label: 'anms.menu.about' },
-    { link: 'features', label: 'anms.menu.features' },
-    { link: 'examples', label: 'anms.menu.examples' }
+    { link: 'about', label: 'sma.menu.about' },
+    { link: 'features', label: 'sma.menu.features' },
+    { link: 'examples', label: 'sma.menu.examples' }
   ];
   navigationSideMenu = [
     ...this.navigation,
-    { link: 'settings', label: 'anms.menu.settings' }
+    { link: 'settings', label: 'sma.menu.settings' }
   ];
 
   isAuthenticated$: Observable<boolean>;
   settings$: Observable<SettingsState>;
   navigationEnd$: Observable<NavigationEnd>;
   activatedRouteSnapshot$: Observable<ActivatedRouteSnapshot>;
+  isHeaderSticky = '';
+  isAuthenticated = false;
 
   constructor(
     public overlayContainer: OverlayContainer,
